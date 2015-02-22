@@ -4,7 +4,29 @@ An implementation in Haskell of Bruce Schneier's deck-of-cards cipher.
 
 Read [more about it](https://www.schneier.com/solitaire.html) on his website!
 
-## Explanation
+## How to use
+
+Compile the source code and run as follows:
+
+    $ ghc solitaire.hs
+    $ ./solitaire <encrypt/decrypt> <message_file> <key_file>
+
+See if you can read my message.secret!
+
+### Secret key
+
+The key file is obviously your secret key and it is represented by one card per line.
+
+For example:
+
+    C8  is 8 of Clubs
+    D13 is King of Diamonds
+    H1  is Ace of Hearts
+    S12 is Queen of Spades
+    J1  is Joker A
+    J2  is Joker B
+
+## Algorithm
 
 ### Encrypt
     
@@ -58,28 +80,6 @@ First ten letters of an unkeyed deck:
 
     D (4)  W (49)  J (10)  Skip Joker (53)  X (24)  H (8)
     Y (51)  R (44)  F (6)  D (4)  G (33)
-
-## How to use
-
-Compile the source code and run as follows:
-
-    $ ghc solitaire.hs
-    $ ./solitaire <encrypt/decrypt> <message_file> <key_file>
-
-See if you can read my message.secret!
-
-### Secret key
-
-The key file is obviously your secret key and it is represented by one card per line.
-
-For example:
-
-    C8  is 8 of Clubs
-    D13 is King of Diamonds
-    H1  is Ace of Hearts
-    S12 is Queen of Spades
-    J1  is Joker A
-    J2  is Joker B
 
 ## Bugs
 
