@@ -66,6 +66,8 @@ Compile the source code and run as follows:
     $ ghc solitaire.hs
     $ ./solitaire <encrypt/decrypt> <message_file> <key_file>
 
+See if you can read my message.secret!
+
 ### Secret key
 
 The key file is obviously your secret key and it is represented by one card per line.
